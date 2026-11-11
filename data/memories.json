@@ -1,0 +1,46 @@
+[
+  {
+    "id": "mem-1790594145619-vlff4",
+    "title": "we love each other whatever condition",
+    "date": "Sep 28, 2026",
+    "location": "faridabad",
+    "type": "text",
+    "mediaUrl": "",
+    "description": "her smile is priceless",
+    "author": "Aditya 💙",
+    "createdAt": "2026-09-28T11:15:45.619Z"
+  },
+  {
+    "id": "mem-1",
+    "title": "Under the Golden Sunset",
+    "date": "Our Favorite Evening",
+    "location": "Quiet Beach Trail",
+    "type": "photo",
+    "mediaUrl": "/memories/memory-1.png",
+    "description": "Holding your hand while the sky turned shades of wine and gold. That walk felt like a dream we didn't want to wake up from.",
+    "author": "Sakshi ❤️",
+    "createdAt": "2026-08-08T17:00:00.000Z"
+  },
+  {
+    "id": "mem-2",
+    "title": "A Note Written in the Rain",
+    "date": "Midnight Thoughts",
+    "location": "Our Cozy Corner",
+    "type": "text",
+    "mediaUrl": "",
+    "description": "You don't always need big moments to feel loved. Just hearing your laughter across the table is my favorite sound in this universe.",
+    "author": "Sakshi ❤️",
+    "createdAt": "2026-08-15T21:30:00.000Z"
+  },
+  {
+    "id": "mem-3",
+    "title": "Moments That Never Fade",
+    "date": "Celebration Night",
+    "location": "City Lights Skyline",
+    "type": "photo",
+    "mediaUrl": "/memories/memory-3.png",
+    "description": "Lost in our own little world while the rest of the city rushed by. I love you more with every passing heartbeat.",
+    "author": "Aditya",
+    "createdAt": "2026-08-20T20:15:00.000Z"
+  }
+]

@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@theme {
+  --color-baby-pink: #F8C8DC;
+  --color-soft-blush: #FFDDE8;
+  --color-rose: #E98AA8;
+  --color-deep-rose: #B84F72;
+  --color-warm-cream: #FFF8F5;
+  --color-soft-white: #FFFDFD;
+  --color-wine: #5A1830;
+  --color-midnight-rose: #250D18;
+  --color-champagne-gold: #D8B56A;
+  --color-midnight: #0B0307;
+
+  /* Aliases for ease of use across components */
+  --color-blush: #FFDDE8;
+  --color-cream: #FFF8F5;
+  --color-gold-soft: #D8B56A;
+  --color-rose-soft: #E98AA8;
+  --color-burgundy: #5A1830;
+
+  --font-serif: var(--font-cormorant), serif;
+  --font-sans: var(--font-jakarta), sans-serif;
+  --font-script: var(--font-alex), cursive;
+}
+
+/* Global resets and enhancements */
+:root {
+  --background: #0B0307;
+  --foreground: #FFF8F5;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0B0307;
+  color: #FFF8F5;
+}
+
+body {
+  background: #0B0307;
+  color: #FFF8F5;
+  overflow-x: hidden;
+}
+
+/* Custom romantic scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0307;
+}
+::-webkit-scrollbar-thumb {
+  background: #B84F72;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E98AA8;
+}
+
+/* Custom glassmorphism styles */
+.glass {
+  background: rgba(11, 3, 7, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(248, 200, 220, 0.15);
+}
+
+.glass-pink {
+  background: rgba(248, 200, 220, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(248, 200, 220, 0.3);
+}
+
+.glass-wine {
+  background: rgba(37, 13, 24, 0.65);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(233, 138, 168, 0.22);
+}
+
+.glass-parchment {
+  background: rgba(255, 248, 245, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(216, 181, 106, 0.35);
+  color: #5A1830;
+}
+
+.handwritten {
+  font-family: var(--font-alex), cursive;
+}
+
+/* Subtle Film-grain texture overlay */
+.film-grain {
+  background-image: radial-gradient(rgba(248, 200, 220, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* 3D Envelope perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Keyframe animations */
+@keyframes pulseHeartbeat {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px rgba(233, 138, 168, 0.6));
+  }
+  30% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 24px rgba(248, 200, 220, 0.95));
+  }
+  50% {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 12px rgba(233, 138, 168, 0.75));
+  }
+  70% {
+    transform: scale(1.14);
+    filter: drop-shadow(0 0 28px rgba(233, 138, 168, 1));
+  }
+}
+
+.heart-beat-pulse {
+  animation: pulseHeartbeat 2.6s infinite cubic-bezier(0.21, 0.61, 0.35, 1);
+}
+
+@keyframes textShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.text-shimmer {
+  background: linear-gradient(90deg, #FFF8F5 0%, #F8C8DC 40%, #D8B56A 70%, #FFF8F5 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: textShimmer 7s linear infinite;
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.float-gentle {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+/* Selection colors */
+::selection {
+  background: #B84F72;
+  color: #FFFDFD;
+}
